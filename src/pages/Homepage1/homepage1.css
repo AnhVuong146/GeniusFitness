@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homescreen1-background {
+    background-image: url("C:\Users\anhvu\OneDrive\Desktop\SJSU code work\GeniusFitness\client\src\assets\homescreen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    height: fit-content;
+    /* line-height: 1.7; */
+    position: relative;
+    /* Required for positioning the ::before pseudo-element */
+}
+
+.homescreen1-background::before {
+    /* Create a pseudo-element to add the overlay */
+    content: "";
+    position: absolute;
+    /* top: 0;
+      left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Darker background overlay */
+}
+
+.text2-overlay {
+    /* Position the text over the background */
+    position: relative;
+    /* Center the text horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Add padding for better readability */
+    padding: 100px;
+    /* Set the text color and other styles */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; */
+    /* Add a background color or opacity to enhance readability if needed */
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+/* Global styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid #4caf50;
+    /* Green border with 5px width */
+    border-radius: 10px;
+    /* Rounded border corners */
+    height: -10px;
+    background-image: url("C:\Users\anhvu\OneDrive\Desktop\SJSU code work\GeniusFitness\client\src\assets\bg-texture.png");
+    background-color: #4ca0af85;
+}
+
+.homescreen1-h1 h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+p {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+}
+
+.Footer-bg {
+    position: relative;
+}
+
+/* Add this CSS for the shiny green buttons */
+.link-button2-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-button2-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* Green background color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-button2-1:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+    transform: scale(3.05);
+    /* Slight scale-up effect on hover */
+    background-color: red;
+}
+
+.link-button2-2:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+    transform: scale(3.05);
+    /* Slight scale-up effect on hover */
+    background-color: #ff00ea;
+}
+
+/* CSS for the TwoPicturesWithDescriptions component */
+.picture-container {
+    display: flex;
+    /* Use flexbox to position pictures side by side */
+    justify-content: space-between;
+    /* Separate pictures with equal space between them */
+}
+
+.picture {
+    text-align: center;
+    /* Center the content inside each picture container */
+    width: 50%;
+    /* Center the content inside each picture container */
+    flex: 10;
+    /* Use flex to distribute equal space between picture containers */
+    margin: 10px;
+
+}
+
+.picture:first-child {
+    margin-right: 10px;
+    /* Add 10px right margin to the first picture container */
+
+}
+
+.picture:last-child {
+    margin-left: 10px;
+    /* Add 10px left margin to the second picture container */
+}
+
+.homepage1-img {
+    max-width: 100%;
+    /* Ensure the images do not exceed their container width */
+    height: auto;
+    border: 5px solid #fd0000;
+    border-radius: 10px;
+
+}
+
+.homepage1-img1 {
+    max-width: 100%;
+    /* Ensure the images do not exceed their container width */
+    height: auto;
+    border: 5px solid #ff00ea;
+    border-radius: 10px;
+}
+
+p {
+    margin-top: 10px;
+    /* Add some spacing between the image and description */
+}

@@ -1,0 +1,117 @@
+.container.contact__container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+
+.contact__options {
+    display:flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 5px solid transparent;
+    border-color: #007bff;
+    margin-left: 2rem;
+    transition: var(--transition);
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: red;
+}
+
+.contact__option-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+/* ========================= FORM ========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    /* background: transparent; */
+    background-color: black;
+    border: 2px solid #007bff;
+    resize: none;
+    color: white;
+}
+
+/* Basic button style */
+.Contact-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .Contact-button:hover {
+    background-color: red;
+  }
+  
+  /* Click effect */
+  .Contact-button:active {
+    background-color: #00468a;
+  }
+  
+  /* Disabled state */
+  .Contact-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+.header2 {
+    margin-left: 35rem;
+
+}
+
+.Contact-background {
+    background-image: url('https://www.planetfitness.com/sites/default/files/feature-image/break-workout_602724.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    height: fit-content;
+    /* line-height: 1.7; */
+    position: relative;
+    /* Required for positioning the ::before pseudo-element */
+}
+
+/*======================= MEDIA QUERIES (MEDIUM DEVICES) =======================*/
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/*======================= MEDIA QUERIES (SMALL DEVICES) =======================*/
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: var(--container-width-sm);
+    }
+}

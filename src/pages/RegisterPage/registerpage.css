@@ -1,0 +1,96 @@
+.background-container {
+    background-image: url("C:\Users\anhvu\OneDrive\Desktop\SJSU code work\GeniusFitness\client\src\assets\loginimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 931px;
+    background-position: center;
+    position: relative; /* Required for positioning the ::before pseudo-element */
+  }
+  
+  .background-container::before {
+    /* Create a pseudo-element to add the overlay */
+    content: "";
+    position: absolute;
+    /* top: 0;
+      left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background overlay */
+  }
+  
+  .text-overlay {
+    /* Position the text over the background */
+    position: relative;
+    /* Center the text horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Add padding for better readability */
+    padding: 100px;
+    /* Set the text color and other styles */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    /* Add a background color or opacity to enhance readability if needed */
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    /* height: 10px; */
+    
+  }
+  
+  .headline {
+      height: 100px;
+  }
+  
+  .headline1 label {
+      margin-left: -180px;
+  }
+  
+  .headline2 label {
+      margin-left: -230px;
+  }
+  
+  .link-button {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: uppercase;
+    font-size: 30px;
+    margin-top: 50px;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .link-button:hover {
+    /* background: transparent; */
+    border-color: green;
+    /* cursor: default; */
+  }
+  
+  .input-text {
+    display: block;
+    width: 300px;
+    height: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 6px;
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+    display: flex;
+    margin: 20px;
+  
+  }
+  
+  /* Style when the input box is focused */
+  .input-text:focus {
+    border-color: #4caf50; /* Green border color on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8); /* Light green box shadow on focus */
+  }
+  
+  /* Placeholder text color */
+  .input-text::placeholder {
+    color: #999; /* Light gray placeholder color */
+  }
+  

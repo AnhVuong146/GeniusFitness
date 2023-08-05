@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.MaleRoutine-background {
+    background-image: url("C:\Users\anhvu\OneDrive\Desktop\SJSU code work\GeniusFitness\client\src\assets\maleroutinepicture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+    height: fit-content;
+    /* line-height: 1.7; */
+    position: relative;
+    /* Required for positioning the ::before pseudo-element */
+}
+
+.MaleRoutine-background::before {
+    /* Create a pseudo-element to add the overlay */
+    content: "";
+    position: absolute;
+    /* top: 0;
+      left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Darker background overlay */
+}
+
+.text3-overlay {
+    /* Position the text over the background */
+    position: relative;
+    /* Center the text horizontally and vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Add padding for better readability */
+    padding: 100px;
+    /* Set the text color and other styles */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; */
+    /* Add a background color or opacity to enhance readability if needed */
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+/* CSS for the WorkoutsPage component */
+.workouts-container {
+    display: flex;
+    /* Use flexbox to position sections side by side */
+    justify-content: space-between;
+    /* Separate sections with equal space between them */
+}
+
+.workouts-list {
+    flex: 1;
+    /* Use flex to make the workouts-list section expand to fill available space */
+}
+
+.workouts-list h2 {
+    font-size: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: rgb(0, 255, 251);
+}
+
+.workouts-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.workouts-list li {
+    display: flex;
+    /* Use flexbox to align image and workout details horizontally */
+    align-items: flex-start;
+    /* Center image and details vertically */
+    margin-bottom: 20px;
+}
+
+.workouts-list img {
+    width: 500px;
+    /* Adjust the image width as needed */
+    height: 350px;
+    /* Adjust the image height as needed */
+    margin-right: 150px;
+    /* Add spacing between image and details */
+    border-radius: 30px;
+    /* Rounded corners for the image */
+    border: 5px solid rgb(255, 0, 0);
+    
+}
+
+.workouts-list h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.workouts-list h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+/* .workouts-list p {
+    font-size: 16px;
+    color: #989898; 
+} */
+
+.description {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.description p {
+    text-align: justify;
+    font-size: 16px;
+    color: #989898; 
+}
+
+.workouts-description {
+    /* Add styles for the workouts-description section */
+    /* You can use this section to display additional content or details for the selected workout */
+}
+
+.video-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+.video-buttons a{
+    background: red;
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.video-buttons a:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+}

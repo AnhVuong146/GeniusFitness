@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.homescreen-background {
+  background-image: url("https://cyclingmagazine.ca/wp-content/uploads/2021/08/GettyImages-1213615970.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: unset;
+  height: fit-content;
+  /* line-height: 1.7; */
+  position: relative;
+  /* Required for positioning the ::before pseudo-element */
+}
+
+.homescreen-background::before {
+  /* Create a pseudo-element to add the overlay */
+  content: "";
+  position: absolute;
+  /* top: 0;
+    left: 0; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.185);
+  /* Darker background overlay */
+}
+
+.text1-overlay {
+  /* Position the text over the background */
+  position: relative;
+  /* Center the text horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Add padding for better readability */
+  padding: 100px;
+  /* Set the text color and other styles */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; */
+  /* Add a background color or opacity to enhance readability if needed */
+  /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  border: 5px solid #4CAF50;
+  /* Green border with 5px width */
+  border-radius: 10px;
+  /* Rounded border corners */
+  height: -10px;
+  background-image: url('C:\Users\anhvu\OneDrive\Desktop\SJSU code work\GeniusFitness\client\src\assets\bg-texture.png');
+  background-color: #4ca0af85;
+
+}
+
+.homepage-img {
+  max-width: 100%;
+  border: 5px solid #4CAF50;
+  /* Green border with 5px width */
+  border-radius: 10px;
+  /* Rounded border corners */
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #ffffff;
+  /* Adjust the color as needed */
+}
+
+p {
+  font-size: 22px;
+}
+
+/* Program Introduction styles */
+.program-introduction {
+  background-color: #4ca0af85;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 5px solid #4CAF50;
+  /* Green border with 5px width */
+  border-radius: 10px;
+  /* Rounded border corners */
+  margin-top: 20px;
+  background-image: url('C:\Users\anhvu\OneDrive\Desktop\SJSU code work\GeniusFitness\client\src\assets\bg-texture.png');
+
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+/* Benefits styles */
+.benefits {
+  background-color: #4ca0af85;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 5px solid #4CAF50;
+  /* Green border with 5px width */
+  border-radius: 10px;
+  /* Rounded border corners */
+  margin-top: 20px;
+  background-image: url('C:\Users\anhvu\OneDrive\Desktop\SJSU code work\GeniusFitness\client\src\assets\bg-texture.png');
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.Footer-bg {
+  position: relative;
+}
+
+
+
+/* Button styles */
+.link-button1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #af4c4c;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 36px;
+  /* border: #45a049; */
+  border-radius: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 50px;
+}
+
+.link-button1:hover {
+  background-color: #45a049;
+}
